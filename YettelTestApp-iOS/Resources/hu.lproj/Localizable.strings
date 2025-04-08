@@ -1,0 +1,10 @@
+highway_vignettes__title = "E-matrica";
+highway_vignettes__national_vignettes_title = "Országos matricák";
+highway_vignettes__pay_button_title = "Vásárlás";
+highway_vignettes__yearly_vignettes_title = "Éves vármegyei matricák";
+
+vignette_type_day_title = "napi (1 napos)";
+vignette_type_week_title = "heti (10 napos)";
+vignette_type_month_title = "havi";
+
+currency = "Ft";

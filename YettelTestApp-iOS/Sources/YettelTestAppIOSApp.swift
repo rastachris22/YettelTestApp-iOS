@@ -4,7 +4,7 @@ import SwiftUI
 struct YettelTestAppIOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HighwayVignettesView()
         }
     }
 }

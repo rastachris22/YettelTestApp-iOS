@@ -1,0 +1,10 @@
+highway_vignettes__title = "E-vignette";
+highway_vignettes__national_vignettes_title = "National vignettes";
+highway_vignettes__pay_button_title = "Pay";
+highway_vignettes__yearly_vignettes_title = "Yearly counties vignettes";
+
+vignette_type_day_title = "daily (1 day)";
+vignette_type_week_title = "weekly (10 days)";
+vignette_type_month_title = "monthly";
+
+currency = "HUF";

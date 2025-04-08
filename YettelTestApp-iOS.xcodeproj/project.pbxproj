@@ -3,17 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A1462BDCF267D02B5FD113D /* YettelTestAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B6D9034DA235DA086FF5A3 /* YettelTestAppIOSTests.swift */; };
+		14CAA48195AC4225904914D7 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = A7979A8A7B5A61F2C5009B96 /* Factory */; };
+		2AFCFD70553E3B8A8B384EBA /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D626F029AD488CB41827EC /* SecondaryButtonStyle.swift */; };
 		3160470CB64653481347A82A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038C4B2E831F291DD29ACA19 /* Preview Assets.xcassets */; };
-		4291CD4E2A73A2629999D809 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE67E746B17D23EE2622F1 /* ContentView.swift */; };
+		43DD35219F48E355FEF9BE62 /* HTTPTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 17D36354378BC9560F9854AC /* HTTPTypes */; };
 		445566A07FA00F44AF67F292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C232EE5F4AE80C019E7734 /* Assets.xcassets */; };
 		4B7DED27A22E6C13AEB0FE49 /* TuistBundle+YettelTestAppIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0625E7969C6C6BCC7C701A1 /* TuistBundle+YettelTestAppIOS.swift */; };
+		5522A0BB91AD1AC5EEC54996 /* Container+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC6964AD6B7FCE63A37224 /* Container+Services.swift */; };
+		559BD6C32434659418543960 /* HighwayVignettesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90955E497DE3CA8108F4738A /* HighwayVignettesViewModel.swift */; };
+		5BA4D264598B446F501D6941 /* RadioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5842B6E4B3102C1E3C76B2 /* RadioButtonView.swift */; };
+		5CAB7A49E46AC0DE6127AC0B /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 619972611789E0515A71B02E /* OpenAPIRuntime */; };
 		626EBB8A3913775C07330B74 /* YettelTestAppIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */; };
+		64219D47C94B276D4825EB8B /* HighwayVignettesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4C0D4B4BBE70048F7E398 /* HighwayVignettesView.swift */; };
+		771005EEAA608225F491F04E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2D852D254EA5559890798CC /* Localizable.strings */; };
+		83CD7FD2395791A50F200885 /* openapi-generator-config.yml in Resources */ = {isa = PBXBuildFile; fileRef = ADF0B0500A3B32894F550C39 /* openapi-generator-config.yml */; };
+		9C490A576A02C615E12B8131 /* HighwayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B2C563530BB9D0257575E /* HighwayInfo.swift */; };
+		A7A624A0C619F23731447A81 /* HighwayInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698DA89077D060E26BB2C998 /* HighwayInfoInteractor.swift */; };
+		C622B2478484711AE335AC0F /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D756DB07700DE2634BD49B /* PrimaryButtonStyle.swift */; };
 		C784613EE547826F612F9D4D /* TuistAssets+YettelTestAppIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5679491B17252296BD71B5D /* TuistAssets+YettelTestAppIOS.swift */; };
+		E4E7E1E22DA5AA4C002B8D73 /* VehicleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7E1E12DA5AA4C002B8D73 /* VehicleInfo.swift */; };
+		E586569EAE438A5646A56162 /* openapi.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8FAEC94E2CA2FFBE10E2DA89 /* openapi.yml */; };
+		E8C4F3CB0DD27BBE1E928331 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 468437F38EAA45D6D0396D2D /* OpenAPIURLSession */; };
+		FFE04A8F49DEC9C1EAB95048 /* TuistStrings+YettelTestAppIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF335CB28786F77404CDDAD /* TuistStrings+YettelTestAppIOS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +69,27 @@
 		038C4B2E831F291DD29ACA19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YettelTestAppIOSApp.swift; sourceTree = "<group>"; };
 		26B6D9034DA235DA086FF5A3 /* YettelTestAppIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YettelTestAppIOSTests.swift; sourceTree = "<group>"; };
+		37D756DB07700DE2634BD49B /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		39C232EE5F4AE80C019E7734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EF335CB28786F77404CDDAD /* TuistStrings+YettelTestAppIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistStrings+YettelTestAppIOS.swift"; sourceTree = "<group>"; };
+		5C5842B6E4B3102C1E3C76B2 /* RadioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonView.swift; sourceTree = "<group>"; };
+		698DA89077D060E26BB2C998 /* HighwayInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayInfoInteractor.swift; sourceTree = "<group>"; };
+		87D4C0D4B4BBE70048F7E398 /* HighwayVignettesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayVignettesView.swift; sourceTree = "<group>"; };
+		8FAEC94E2CA2FFBE10E2DA89 /* openapi.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = openapi.yml; sourceTree = "<group>"; };
+		90955E497DE3CA8108F4738A /* HighwayVignettesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayVignettesViewModel.swift; sourceTree = "<group>"; };
+		ADF0B0500A3B32894F550C39 /* openapi-generator-config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "openapi-generator-config.yml"; sourceTree = "<group>"; };
 		B0625E7969C6C6BCC7C701A1 /* TuistBundle+YettelTestAppIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+YettelTestAppIOS.swift"; sourceTree = "<group>"; };
+		C7BC6964AD6B7FCE63A37224 /* Container+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Services.swift"; sourceTree = "<group>"; };
 		D00AD5FABC2DA2C09D9D953A /* YettelTestApp-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "YettelTestApp-iOS-Info.plist"; sourceTree = "<group>"; };
 		D7C173C2291882F90519EE8C /* YettelTestApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YettelTestApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0B2C563530BB9D0257575E /* HighwayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayInfo.swift; sourceTree = "<group>"; };
+		E0D626F029AD488CB41827EC /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
+		E4E7E1E12DA5AA4C002B8D73 /* VehicleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfo.swift; sourceTree = "<group>"; };
 		E5679491B17252296BD71B5D /* TuistAssets+YettelTestAppIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+YettelTestAppIOS.swift"; sourceTree = "<group>"; };
+		EEE3544FE66C1D23B0C37803 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F04924C456C7D159CB0C1DC7 /* YettelTestApp-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "YettelTestApp-iOSTests-Info.plist"; sourceTree = "<group>"; };
-		F6FE67E746B17D23EE2622F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9CC38B42D2B0BAE7F882A8F /* YettelTestApp_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YettelTestApp_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC31B525EAB7E20F3A51D5F /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CAA48195AC4225904914D7 /* Factory in Frameworks */,
+				43DD35219F48E355FEF9BE62 /* HTTPTypes in Frameworks */,
+				5CAB7A49E46AC0DE6127AC0B /* OpenAPIRuntime in Frameworks */,
+				E8C4F3CB0DD27BBE1E928331 /* OpenAPIURLSession in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +123,23 @@
 			path = Derived;
 			sourceTree = "<group>";
 		};
+		1A030F9C3BA3B3EDD3C50670 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				37D756DB07700DE2634BD49B /* PrimaryButtonStyle.swift */,
+				E0D626F029AD488CB41827EC /* SecondaryButtonStyle.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		337810CF7E432617F5A3D899 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				C7BC6964AD6B7FCE63A37224 /* Container+Services.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		39B5F506981A73829305A8AD /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,17 +153,48 @@
 			children = (
 				E5679491B17252296BD71B5D /* TuistAssets+YettelTestAppIOS.swift */,
 				B0625E7969C6C6BCC7C701A1 /* TuistBundle+YettelTestAppIOS.swift */,
+				4EF335CB28786F77404CDDAD /* TuistStrings+YettelTestAppIOS.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		5A877187BEFF809792CFC51F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FB2D7923FD4C18DACED2743A /* HighwayInfo */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		639D2D5B497D206C116C2E33 /* HighwayVignettes */ = {
+			isa = PBXGroup;
+			children = (
+				87D4C0D4B4BBE70048F7E398 /* HighwayVignettesView.swift */,
+				90955E497DE3CA8108F4738A /* HighwayVignettesViewModel.swift */,
+			);
+			path = HighwayVignettes;
 			sourceTree = "<group>";
 		};
 		72BBABD1136082355099F5F8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F6FE67E746B17D23EE2622F1 /* ContentView.swift */,
+				337810CF7E432617F5A3D899 /* DI */,
+				BBE28B2032314DC70FFBF838 /* Feature */,
+				5A877187BEFF809792CFC51F /* Interactor */,
+				927F191A11FEE169FC2FC059 /* Model */,
+				A25F9C6F62D2AAB43A3E9B47 /* Modifier */,
+				DF1CBDB3CB45AFCEC8886991 /* View */,
 				1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		927F191A11FEE169FC2FC059 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFAD44879F511AF22B66C613 /* HighwayInfo */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		960CB7F6D827B2AFA623169A /* InfoPlists */ = {
@@ -125,12 +206,28 @@
 			path = InfoPlists;
 			sourceTree = "<group>";
 		};
+		A25F9C6F62D2AAB43A3E9B47 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				1A030F9C3BA3B3EDD3C50670 /* Button */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		AD5AF18920981B2064B58AD0 = {
 			isa = PBXGroup;
 			children = (
 				FE80E5FFE585D6D09C96684F /* Project */,
 				E6F357BD8F78474F64D5A94E /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		BBE28B2032314DC70FFBF838 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				FB4FE3F9D6B0B5845C3C2508 /* HighwayVignettes */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		C25091E45ECBEE73DCF76AB1 /* YettelTestApp-iOS */ = {
@@ -143,13 +240,32 @@
 			path = "YettelTestApp-iOS";
 			sourceTree = "<group>";
 		};
+		C7C9712BA35301F351897841 /* RadioButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				5C5842B6E4B3102C1E3C76B2 /* RadioButtonView.swift */,
+			);
+			path = RadioButtonView;
+			sourceTree = "<group>";
+		};
 		C8C265F2EC77CCD35D88FBFE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D2D852D254EA5559890798CC /* Localizable.strings */,
 				F72EBC1E4407E5E0A44B5B6E /* Preview Content */,
 				39C232EE5F4AE80C019E7734 /* Assets.xcassets */,
+				ADF0B0500A3B32894F550C39 /* openapi-generator-config.yml */,
+				8FAEC94E2CA2FFBE10E2DA89 /* openapi.yml */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF1CBDB3CB45AFCEC8886991 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7C9712BA35301F351897841 /* RadioButtonView */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E6F357BD8F78474F64D5A94E /* Products */ = {
@@ -169,6 +285,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FB2D7923FD4C18DACED2743A /* HighwayInfo */ = {
+			isa = PBXGroup;
+			children = (
+				698DA89077D060E26BB2C998 /* HighwayInfoInteractor.swift */,
+			);
+			path = HighwayInfo;
+			sourceTree = "<group>";
+		};
+		FB4FE3F9D6B0B5845C3C2508 /* HighwayVignettes */ = {
+			isa = PBXGroup;
+			children = (
+				639D2D5B497D206C116C2E33 /* HighwayVignettes */,
+			);
+			path = HighwayVignettes;
+			sourceTree = "<group>";
+		};
 		FE80E5FFE585D6D09C96684F /* Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +308,15 @@
 				C25091E45ECBEE73DCF76AB1 /* YettelTestApp-iOS */,
 			);
 			name = Project;
+			sourceTree = "<group>";
+		};
+		FFAD44879F511AF22B66C613 /* HighwayInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DF0B2C563530BB9D0257575E /* HighwayInfo.swift */,
+				E4E7E1E12DA5AA4C002B8D73 /* VehicleInfo.swift */,
+			);
+			path = HighwayInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +334,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				8EF62B389EC720E7EDAFE596 /* PBXTargetDependency */,
 			);
 			name = "YettelTestApp-iOS";
+			packageProductDependencies = (
+				A7979A8A7B5A61F2C5009B96 /* Factory */,
+				17D36354378BC9560F9854AC /* HTTPTypes */,
+				619972611789E0515A71B02E /* OpenAPIRuntime */,
+				468437F38EAA45D6D0396D2D /* OpenAPIURLSession */,
+			);
 			productName = YettelTestApp_iOS;
 			productReference = D7C173C2291882F90519EE8C /* YettelTestApp_iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -238,8 +386,15 @@
 			knownRegions = (
 				Base,
 				en,
+				hu,
 			);
 			mainGroup = AD5AF18920981B2064B58AD0;
+			packageReferences = (
+				C2F054072BF21DE99A1331C8 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				E4AE87772A8CBD9060B78BAE /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
+				DD1FC9F4D1FB8E74C830A81D /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+				E5F85C4C638762E94F11CE99 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = E6F357BD8F78474F64D5A94E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +412,9 @@
 			files = (
 				445566A07FA00F44AF67F292 /* Assets.xcassets in Resources */,
 				3160470CB64653481347A82A /* Preview Assets.xcassets in Resources */,
+				771005EEAA608225F491F04E /* Localizable.strings in Resources */,
+				83CD7FD2395791A50F200885 /* openapi-generator-config.yml in Resources */,
+				E586569EAE438A5646A56162 /* openapi.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +442,16 @@
 			files = (
 				C784613EE547826F612F9D4D /* TuistAssets+YettelTestAppIOS.swift in Sources */,
 				4B7DED27A22E6C13AEB0FE49 /* TuistBundle+YettelTestAppIOS.swift in Sources */,
-				4291CD4E2A73A2629999D809 /* ContentView.swift in Sources */,
+				FFE04A8F49DEC9C1EAB95048 /* TuistStrings+YettelTestAppIOS.swift in Sources */,
+				5522A0BB91AD1AC5EEC54996 /* Container+Services.swift in Sources */,
+				E4E7E1E22DA5AA4C002B8D73 /* VehicleInfo.swift in Sources */,
+				64219D47C94B276D4825EB8B /* HighwayVignettesView.swift in Sources */,
+				559BD6C32434659418543960 /* HighwayVignettesViewModel.swift in Sources */,
+				A7A624A0C619F23731447A81 /* HighwayInfoInteractor.swift in Sources */,
+				9C490A576A02C615E12B8131 /* HighwayInfo.swift in Sources */,
+				C622B2478484711AE335AC0F /* PrimaryButtonStyle.swift in Sources */,
+				2AFCFD70553E3B8A8B384EBA /* SecondaryButtonStyle.swift in Sources */,
+				5BA4D264598B446F501D6941 /* RadioButtonView.swift in Sources */,
 				626EBB8A3913775C07330B74 /* YettelTestAppIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +465,23 @@
 			target = B6CBC5315CFC9EB2CC1C32FA /* YettelTestApp-iOS */;
 			targetProxy = FD3209D899B0B98FF5B9145B /* PBXContainerItemProxy */;
 		};
+		8EF62B389EC720E7EDAFE596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2A96E579ABA87C845FBF9666 /* OpenAPIGenerator */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2D852D254EA5559890798CC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE3544FE66C1D23B0C37803 /* en */,
+				FCC31B525EAB7E20F3A51D5F /* hu */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D69FE66107D1FB30617B89F /* Release */ = {
@@ -344,10 +527,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -398,10 +578,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -552,6 +729,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2F054072BF21DE99A1331C8 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		DD1FC9F4D1FB8E74C830A81D /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.2;
+			};
+		};
+		E4AE87772A8CBD9060B78BAE /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-runtime";
+			requirement = {
+				kind = exactVersion;
+				version = 1.5.0;
+			};
+		};
+		E5F85C4C638762E94F11CE99 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17D36354378BC9560F9854AC /* HTTPTypes */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HTTPTypes;
+		};
+		2A96E579ABA87C845FBF9666 /* OpenAPIGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:OpenAPIGenerator";
+		};
+		468437F38EAA45D6D0396D2D /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAPIURLSession;
+		};
+		619972611789E0515A71B02E /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAPIRuntime;
+		};
+		A7979A8A7B5A61F2C5009B96 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6CDC782EB092BBE51EF464A /* Project object */;
 }
