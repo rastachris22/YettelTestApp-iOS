@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1462BDCF267D02B5FD113D /* YettelTestAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B6D9034DA235DA086FF5A3 /* YettelTestAppIOSTests.swift */; };
+		3160470CB64653481347A82A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038C4B2E831F291DD29ACA19 /* Preview Assets.xcassets */; };
+		4291CD4E2A73A2629999D809 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FE67E746B17D23EE2622F1 /* ContentView.swift */; };
+		445566A07FA00F44AF67F292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C232EE5F4AE80C019E7734 /* Assets.xcassets */; };
+		4B7DED27A22E6C13AEB0FE49 /* TuistBundle+YettelTestAppIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0625E7969C6C6BCC7C701A1 /* TuistBundle+YettelTestAppIOS.swift */; };
+		626EBB8A3913775C07330B74 /* YettelTestAppIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */; };
+		C784613EE547826F612F9D4D /* TuistAssets+YettelTestAppIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5679491B17252296BD71B5D /* TuistAssets+YettelTestAppIOS.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD3209D899B0B98FF5B9145B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6CDC782EB092BBE51EF464A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6CBC5315CFC9EB2CC1C32FA;
+			remoteInfo = "YettelTestApp-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D95D9B3488C419B3A7F4122 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B1C2F66A1DAA918E30B7F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		038C4B2E831F291DD29ACA19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YettelTestAppIOSApp.swift; sourceTree = "<group>"; };
+		26B6D9034DA235DA086FF5A3 /* YettelTestAppIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YettelTestAppIOSTests.swift; sourceTree = "<group>"; };
+		39C232EE5F4AE80C019E7734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0625E7969C6C6BCC7C701A1 /* TuistBundle+YettelTestAppIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+YettelTestAppIOS.swift"; sourceTree = "<group>"; };
+		D00AD5FABC2DA2C09D9D953A /* YettelTestApp-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "YettelTestApp-iOS-Info.plist"; sourceTree = "<group>"; };
+		D7C173C2291882F90519EE8C /* YettelTestApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YettelTestApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5679491B17252296BD71B5D /* TuistAssets+YettelTestAppIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+YettelTestAppIOS.swift"; sourceTree = "<group>"; };
+		F04924C456C7D159CB0C1DC7 /* YettelTestApp-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "YettelTestApp-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		F6FE67E746B17D23EE2622F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9CC38B42D2B0BAE7F882A8F /* YettelTestApp_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YettelTestApp_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		370DB1E9C2F771710F068A8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24F94D552333F618325009B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06CDA7F52EB52AB45A276201 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				960CB7F6D827B2AFA623169A /* InfoPlists */,
+				4AEB137EDCA3D50EF9E422A9 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		39B5F506981A73829305A8AD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				26B6D9034DA235DA086FF5A3 /* YettelTestAppIOSTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4AEB137EDCA3D50EF9E422A9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E5679491B17252296BD71B5D /* TuistAssets+YettelTestAppIOS.swift */,
+				B0625E7969C6C6BCC7C701A1 /* TuistBundle+YettelTestAppIOS.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		72BBABD1136082355099F5F8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F6FE67E746B17D23EE2622F1 /* ContentView.swift */,
+				1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		960CB7F6D827B2AFA623169A /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				D00AD5FABC2DA2C09D9D953A /* YettelTestApp-iOS-Info.plist */,
+				F04924C456C7D159CB0C1DC7 /* YettelTestApp-iOSTests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		AD5AF18920981B2064B58AD0 = {
+			isa = PBXGroup;
+			children = (
+				FE80E5FFE585D6D09C96684F /* Project */,
+				E6F357BD8F78474F64D5A94E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C25091E45ECBEE73DCF76AB1 /* YettelTestApp-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C8C265F2EC77CCD35D88FBFE /* Resources */,
+				72BBABD1136082355099F5F8 /* Sources */,
+				39B5F506981A73829305A8AD /* Tests */,
+			);
+			path = "YettelTestApp-iOS";
+			sourceTree = "<group>";
+		};
+		C8C265F2EC77CCD35D88FBFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F72EBC1E4407E5E0A44B5B6E /* Preview Content */,
+				39C232EE5F4AE80C019E7734 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E6F357BD8F78474F64D5A94E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7C173C2291882F90519EE8C /* YettelTestApp_iOS.app */,
+				F9CC38B42D2B0BAE7F882A8F /* YettelTestApp_iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F72EBC1E4407E5E0A44B5B6E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				038C4B2E831F291DD29ACA19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE80E5FFE585D6D09C96684F /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				06CDA7F52EB52AB45A276201 /* Derived */,
+				C25091E45ECBEE73DCF76AB1 /* YettelTestApp-iOS */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6CBC5315CFC9EB2CC1C32FA /* YettelTestApp-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DB2DF10F77E52FE5C7D847 /* Build configuration list for PBXNativeTarget "YettelTestApp-iOS" */;
+			buildPhases = (
+				DD5C509731EA00981E8010F8 /* Sources */,
+				85D627B771505E253234FA16 /* Resources */,
+				0D95D9B3488C419B3A7F4122 /* Embed Frameworks */,
+				370DB1E9C2F771710F068A8D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YettelTestApp-iOS";
+			productName = YettelTestApp_iOS;
+			productReference = D7C173C2291882F90519EE8C /* YettelTestApp_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C48D276867944EFD9EB23310 /* YettelTestApp-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5DC01CB3DBB7E0333B8DC7 /* Build configuration list for PBXNativeTarget "YettelTestApp-iOSTests" */;
+			buildPhases = (
+				D35C79D216FB208EA9434163 /* Sources */,
+				D2D16E7A6E33380C70D7F0EE /* Resources */,
+				C9B1C2F66A1DAA918E30B7F0 /* Embed Frameworks */,
+				A24F94D552333F618325009B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				725C2E1EE1A4C7E7E5EB104C /* PBXTargetDependency */,
+			);
+			name = "YettelTestApp-iOSTests";
+			productName = YettelTestApp_iOSTests;
+			productReference = F9CC38B42D2B0BAE7F882A8F /* YettelTestApp_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6CDC782EB092BBE51EF464A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					C48D276867944EFD9EB23310 = {
+						TestTargetID = B6CBC5315CFC9EB2CC1C32FA;
+					};
+				};
+			};
+			buildConfigurationList = B599F5C60C79E8FFD44722D4 /* Build configuration list for PBXProject "YettelTestApp-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AD5AF18920981B2064B58AD0;
+			productRefGroup = E6F357BD8F78474F64D5A94E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6CBC5315CFC9EB2CC1C32FA /* YettelTestApp-iOS */,
+				C48D276867944EFD9EB23310 /* YettelTestApp-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85D627B771505E253234FA16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445566A07FA00F44AF67F292 /* Assets.xcassets in Resources */,
+				3160470CB64653481347A82A /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D16E7A6E33380C70D7F0EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D35C79D216FB208EA9434163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1462BDCF267D02B5FD113D /* YettelTestAppIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C509731EA00981E8010F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C784613EE547826F612F9D4D /* TuistAssets+YettelTestAppIOS.swift in Sources */,
+				4B7DED27A22E6C13AEB0FE49 /* TuistBundle+YettelTestAppIOS.swift in Sources */,
+				4291CD4E2A73A2629999D809 /* ContentView.swift in Sources */,
+				626EBB8A3913775C07330B74 /* YettelTestAppIOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		725C2E1EE1A4C7E7E5EB104C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YettelTestApp-iOS";
+			target = B6CBC5315CFC9EB2CC1C32FA /* YettelTestApp-iOS */;
+			targetProxy = FD3209D899B0B98FF5B9145B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D69FE66107D1FB30617B89F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/YettelTestApp-iOSTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.tuist.YettelTestApp-iOSTests";
+				PRODUCT_NAME = YettelTestApp_iOSTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YettelTestApp_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YettelTestApp_iOS";
+				TEST_TARGET_NAME = "YettelTestApp-iOS";
+			};
+			name = Release;
+		};
+		380DF9BEAD0B41856A9AD82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/YettelTestApp-iOSTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.tuist.YettelTestApp-iOSTests";
+				PRODUCT_NAME = YettelTestApp_iOSTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YettelTestApp_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YettelTestApp_iOS";
+				TEST_TARGET_NAME = "YettelTestApp-iOS";
+			};
+			name = Debug;
+		};
+		98A45F1AA9BE1D91A0B73060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/YettelTestApp-iOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.tuist.YettelTestApp-iOS";
+				PRODUCT_NAME = YettelTestApp_iOS;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A19B49DBB2CEEFC4AF881B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/YettelTestApp-iOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.tuist.YettelTestApp-iOS";
+				PRODUCT_NAME = YettelTestApp_iOS;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9C0D2BDF5F2E2751D8D62AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E32839E73077097092E29895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B599F5C60C79E8FFD44722D4 /* Build configuration list for PBXProject "YettelTestApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C0D2BDF5F2E2751D8D62AB /* Debug */,
+				E32839E73077097092E29895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5DC01CB3DBB7E0333B8DC7 /* Build configuration list for PBXNativeTarget "YettelTestApp-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380DF9BEAD0B41856A9AD82B /* Debug */,
+				1D69FE66107D1FB30617B89F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DB2DF10F77E52FE5C7D847 /* Build configuration list for PBXNativeTarget "YettelTestApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19B49DBB2CEEFC4AF881B28 /* Debug */,
+				98A45F1AA9BE1D91A0B73060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6CDC782EB092BBE51EF464A /* Project object */;
+}
