@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,21 +14,27 @@
 		43DD35219F48E355FEF9BE62 /* HTTPTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 17D36354378BC9560F9854AC /* HTTPTypes */; };
 		445566A07FA00F44AF67F292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C232EE5F4AE80C019E7734 /* Assets.xcassets */; };
 		4B7DED27A22E6C13AEB0FE49 /* TuistBundle+YettelTestAppIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0625E7969C6C6BCC7C701A1 /* TuistBundle+YettelTestAppIOS.swift */; };
+		5429423560FDDB26DFCD2993 /* PaymentConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76CF47180C303212ED103AF /* PaymentConfirmationViewModel.swift */; };
 		5522A0BB91AD1AC5EEC54996 /* Container+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC6964AD6B7FCE63A37224 /* Container+Services.swift */; };
 		559BD6C32434659418543960 /* HighwayVignettesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90955E497DE3CA8108F4738A /* HighwayVignettesViewModel.swift */; };
 		5BA4D264598B446F501D6941 /* RadioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5842B6E4B3102C1E3C76B2 /* RadioButtonView.swift */; };
+		5CA38E629D4F56EB343F9909 /* YearlyHighwayVignettesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C950676E98697B3C9F82CE /* YearlyHighwayVignettesViewModel.swift */; };
 		5CAB7A49E46AC0DE6127AC0B /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 619972611789E0515A71B02E /* OpenAPIRuntime */; };
 		626EBB8A3913775C07330B74 /* YettelTestAppIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */; };
 		64219D47C94B276D4825EB8B /* HighwayVignettesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D4C0D4B4BBE70048F7E398 /* HighwayVignettesView.swift */; };
+		688CC69CC0A73DA25212D91B /* PaymentResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C903E2A95F586CA4F2EB49 /* PaymentResultView.swift */; };
 		771005EEAA608225F491F04E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2D852D254EA5559890798CC /* Localizable.strings */; };
 		83CD7FD2395791A50F200885 /* openapi-generator-config.yml in Resources */ = {isa = PBXBuildFile; fileRef = ADF0B0500A3B32894F550C39 /* openapi-generator-config.yml */; };
+		917776F790B36CD8190CE5B1 /* PaymentConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5BF72C2C687F61D5BEFB1F /* PaymentConfirmationView.swift */; };
 		9C490A576A02C615E12B8131 /* HighwayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B2C563530BB9D0257575E /* HighwayInfo.swift */; };
-		A7A624A0C619F23731447A81 /* HighwayInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698DA89077D060E26BB2C998 /* HighwayInfoInteractor.swift */; };
+		A0AD9AB3D53982D78B6706D9 /* VehicleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4536A2CE1159ED3E91741B /* VehicleInfo.swift */; };
 		C622B2478484711AE335AC0F /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D756DB07700DE2634BD49B /* PrimaryButtonStyle.swift */; };
 		C784613EE547826F612F9D4D /* TuistAssets+YettelTestAppIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5679491B17252296BD71B5D /* TuistAssets+YettelTestAppIOS.swift */; };
-		E4E7E1E22DA5AA4C002B8D73 /* VehicleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7E1E12DA5AA4C002B8D73 /* VehicleInfo.swift */; };
+		CF7358A5E9588CAADF19419C /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0E183F37F36CA217A9D35 /* Routes.swift */; };
+		E31084A3FE133D2BC96D2319 /* HighwayInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E5E614BD6D50934269564 /* HighwayInfoInteractor.swift */; };
 		E586569EAE438A5646A56162 /* openapi.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8FAEC94E2CA2FFBE10E2DA89 /* openapi.yml */; };
 		E8C4F3CB0DD27BBE1E928331 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 468437F38EAA45D6D0396D2D /* OpenAPIURLSession */; };
+		F832506B9C0B906EB5B83804 /* YearlyHighwayVignettesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5111885413B3E2454909E84 /* YearlyHighwayVignettesView.swift */; };
 		FFE04A8F49DEC9C1EAB95048 /* TuistStrings+YettelTestAppIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF335CB28786F77404CDDAD /* TuistStrings+YettelTestAppIOS.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,24 +73,30 @@
 
 /* Begin PBXFileReference section */
 		038C4B2E831F291DD29ACA19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18C950676E98697B3C9F82CE /* YearlyHighwayVignettesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyHighwayVignettesViewModel.swift; sourceTree = "<group>"; };
 		1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YettelTestAppIOSApp.swift; sourceTree = "<group>"; };
 		26B6D9034DA235DA086FF5A3 /* YettelTestAppIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YettelTestAppIOSTests.swift; sourceTree = "<group>"; };
 		37D756DB07700DE2634BD49B /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		39C232EE5F4AE80C019E7734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D4536A2CE1159ED3E91741B /* VehicleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfo.swift; sourceTree = "<group>"; };
 		4EF335CB28786F77404CDDAD /* TuistStrings+YettelTestAppIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistStrings+YettelTestAppIOS.swift"; sourceTree = "<group>"; };
 		5C5842B6E4B3102C1E3C76B2 /* RadioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonView.swift; sourceTree = "<group>"; };
-		698DA89077D060E26BB2C998 /* HighwayInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayInfoInteractor.swift; sourceTree = "<group>"; };
+		77C903E2A95F586CA4F2EB49 /* PaymentResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResultView.swift; sourceTree = "<group>"; };
 		87D4C0D4B4BBE70048F7E398 /* HighwayVignettesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayVignettesView.swift; sourceTree = "<group>"; };
 		8FAEC94E2CA2FFBE10E2DA89 /* openapi.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = openapi.yml; sourceTree = "<group>"; };
+		8FC0E183F37F36CA217A9D35 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		90955E497DE3CA8108F4738A /* HighwayVignettesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayVignettesViewModel.swift; sourceTree = "<group>"; };
+		9A4E5E614BD6D50934269564 /* HighwayInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayInfoInteractor.swift; sourceTree = "<group>"; };
+		A5111885413B3E2454909E84 /* YearlyHighwayVignettesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyHighwayVignettesView.swift; sourceTree = "<group>"; };
 		ADF0B0500A3B32894F550C39 /* openapi-generator-config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "openapi-generator-config.yml"; sourceTree = "<group>"; };
 		B0625E7969C6C6BCC7C701A1 /* TuistBundle+YettelTestAppIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+YettelTestAppIOS.swift"; sourceTree = "<group>"; };
+		B76CF47180C303212ED103AF /* PaymentConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmationViewModel.swift; sourceTree = "<group>"; };
 		C7BC6964AD6B7FCE63A37224 /* Container+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Services.swift"; sourceTree = "<group>"; };
+		CD5BF72C2C687F61D5BEFB1F /* PaymentConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmationView.swift; sourceTree = "<group>"; };
 		D00AD5FABC2DA2C09D9D953A /* YettelTestApp-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "YettelTestApp-iOS-Info.plist"; sourceTree = "<group>"; };
 		D7C173C2291882F90519EE8C /* YettelTestApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YettelTestApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0B2C563530BB9D0257575E /* HighwayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwayInfo.swift; sourceTree = "<group>"; };
 		E0D626F029AD488CB41827EC /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
-		E4E7E1E12DA5AA4C002B8D73 /* VehicleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfo.swift; sourceTree = "<group>"; };
 		E5679491B17252296BD71B5D /* TuistAssets+YettelTestAppIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+YettelTestAppIOS.swift"; sourceTree = "<group>"; };
 		EEE3544FE66C1D23B0C37803 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F04924C456C7D159CB0C1DC7 /* YettelTestApp-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "YettelTestApp-iOSTests-Info.plist"; sourceTree = "<group>"; };
@@ -148,6 +160,15 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		44D458F25B7D74CE8F81877F /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				E1591FC99BD8560E15E1A1DF /* PaymentConfirmation */,
+				BF09FBEEE0D2E1EF8BF5AF3B /* PaymentResult */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		4AEB137EDCA3D50EF9E422A9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +185,14 @@
 				FB2D7923FD4C18DACED2743A /* HighwayInfo */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BDCD36BA315BAFF5C4A42B0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0E183F37F36CA217A9D35 /* Routes.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		639D2D5B497D206C116C2E33 /* HighwayVignettes */ = {
@@ -183,6 +212,7 @@
 				5A877187BEFF809792CFC51F /* Interactor */,
 				927F191A11FEE169FC2FC059 /* Model */,
 				A25F9C6F62D2AAB43A3E9B47 /* Modifier */,
+				5BDCD36BA315BAFF5C4A42B0 /* Navigation */,
 				DF1CBDB3CB45AFCEC8886991 /* View */,
 				1DDF6A7FC9B4ADCF2BD03EC0 /* YettelTestAppIOSApp.swift */,
 			);
@@ -214,6 +244,15 @@
 			path = Modifier;
 			sourceTree = "<group>";
 		};
+		A41072D9BDD0C216EA3EAD43 /* YearlyHighwayVignettes */ = {
+			isa = PBXGroup;
+			children = (
+				A5111885413B3E2454909E84 /* YearlyHighwayVignettesView.swift */,
+				18C950676E98697B3C9F82CE /* YearlyHighwayVignettesViewModel.swift */,
+			);
+			path = YearlyHighwayVignettes;
+			sourceTree = "<group>";
+		};
 		AD5AF18920981B2064B58AD0 = {
 			isa = PBXGroup;
 			children = (
@@ -226,8 +265,17 @@
 			isa = PBXGroup;
 			children = (
 				FB4FE3F9D6B0B5845C3C2508 /* HighwayVignettes */,
+				44D458F25B7D74CE8F81877F /* Payment */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		BF09FBEEE0D2E1EF8BF5AF3B /* PaymentResult */ = {
+			isa = PBXGroup;
+			children = (
+				77C903E2A95F586CA4F2EB49 /* PaymentResultView.swift */,
+			);
+			path = PaymentResult;
 			sourceTree = "<group>";
 		};
 		C25091E45ECBEE73DCF76AB1 /* YettelTestApp-iOS */ = {
@@ -268,6 +316,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E1591FC99BD8560E15E1A1DF /* PaymentConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				CD5BF72C2C687F61D5BEFB1F /* PaymentConfirmationView.swift */,
+				B76CF47180C303212ED103AF /* PaymentConfirmationViewModel.swift */,
+			);
+			path = PaymentConfirmation;
+			sourceTree = "<group>";
+		};
 		E6F357BD8F78474F64D5A94E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,7 +345,7 @@
 		FB2D7923FD4C18DACED2743A /* HighwayInfo */ = {
 			isa = PBXGroup;
 			children = (
-				698DA89077D060E26BB2C998 /* HighwayInfoInteractor.swift */,
+				9A4E5E614BD6D50934269564 /* HighwayInfoInteractor.swift */,
 			);
 			path = HighwayInfo;
 			sourceTree = "<group>";
@@ -297,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				639D2D5B497D206C116C2E33 /* HighwayVignettes */,
+				A41072D9BDD0C216EA3EAD43 /* YearlyHighwayVignettes */,
 			);
 			path = HighwayVignettes;
 			sourceTree = "<group>";
@@ -314,7 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				DF0B2C563530BB9D0257575E /* HighwayInfo.swift */,
-				E4E7E1E12DA5AA4C002B8D73 /* VehicleInfo.swift */,
+				3D4536A2CE1159ED3E91741B /* VehicleInfo.swift */,
 			);
 			path = HighwayInfo;
 			sourceTree = "<group>";
@@ -444,13 +502,19 @@
 				4B7DED27A22E6C13AEB0FE49 /* TuistBundle+YettelTestAppIOS.swift in Sources */,
 				FFE04A8F49DEC9C1EAB95048 /* TuistStrings+YettelTestAppIOS.swift in Sources */,
 				5522A0BB91AD1AC5EEC54996 /* Container+Services.swift in Sources */,
-				E4E7E1E22DA5AA4C002B8D73 /* VehicleInfo.swift in Sources */,
 				64219D47C94B276D4825EB8B /* HighwayVignettesView.swift in Sources */,
 				559BD6C32434659418543960 /* HighwayVignettesViewModel.swift in Sources */,
-				A7A624A0C619F23731447A81 /* HighwayInfoInteractor.swift in Sources */,
+				F832506B9C0B906EB5B83804 /* YearlyHighwayVignettesView.swift in Sources */,
+				5CA38E629D4F56EB343F9909 /* YearlyHighwayVignettesViewModel.swift in Sources */,
+				917776F790B36CD8190CE5B1 /* PaymentConfirmationView.swift in Sources */,
+				5429423560FDDB26DFCD2993 /* PaymentConfirmationViewModel.swift in Sources */,
+				688CC69CC0A73DA25212D91B /* PaymentResultView.swift in Sources */,
+				E31084A3FE133D2BC96D2319 /* HighwayInfoInteractor.swift in Sources */,
 				9C490A576A02C615E12B8131 /* HighwayInfo.swift in Sources */,
+				A0AD9AB3D53982D78B6706D9 /* VehicleInfo.swift in Sources */,
 				C622B2478484711AE335AC0F /* PrimaryButtonStyle.swift in Sources */,
 				2AFCFD70553E3B8A8B384EBA /* SecondaryButtonStyle.swift in Sources */,
+				CF7358A5E9588CAADF19419C /* Routes.swift in Sources */,
 				5BA4D264598B446F501D6941 /* RadioButtonView.swift in Sources */,
 				626EBB8A3913775C07330B74 /* YettelTestAppIOSApp.swift in Sources */,
 			);
@@ -527,7 +591,10 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -578,7 +645,10 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;

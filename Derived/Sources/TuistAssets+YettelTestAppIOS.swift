@@ -23,7 +23,10 @@ public enum YettelTestAppIOSAsset: Sendable {
   public enum Assets {
   public static let accentColor = YettelTestAppIOSColors(name: "AccentColor")
     public enum Color: Sendable {
-    public enum Button: Sendable {
+    public enum Bg: Sendable {
+      public static let neon = YettelTestAppIOSColors(name: "Color/Bg/neon")
+      }
+      public enum Button: Sendable {
       public static let primary = YettelTestAppIOSColors(name: "Color/Button/Primary")
         public static let secondary = YettelTestAppIOSColors(name: "Color/Button/Secondary")
       }
@@ -35,6 +38,10 @@ public enum YettelTestAppIOSAsset: Sendable {
     public enum Icon: Sendable {
     public static let arrowRight = YettelTestAppIOSImages(name: "Icon/arrow_right")
       public static let carIcon = YettelTestAppIOSImages(name: "Icon/car_icon")
+    }
+    public enum Image: Sendable {
+    public static let confetti = YettelTestAppIOSImages(name: "Image/confetti")
+      public static let paymentSuccessBg = YettelTestAppIOSImages(name: "Image/payment_success_bg")
     }
   }
   public enum PreviewAssets {

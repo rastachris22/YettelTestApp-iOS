@@ -3,8 +3,28 @@ highway_vignettes__national_vignettes_title = "National vignettes";
 highway_vignettes__pay_button_title = "Pay";
 highway_vignettes__yearly_vignettes_title = "Yearly counties vignettes";
 
+yearly_highway_vignettes__title = "E-vignette";
+yearly_highway_vignettes__yearly_vignettes_title = "Yearly counties vignettes";
+yearly_highway_vignettes__amount_label = "Payable amount";
+yearly_highway_vignettes__pay_button_title = "Next";
+
+payment_confirmation__title = "E-vignette";
+payment_confirmation__confirmation_label = "Payment confirmation";
+payment_confirmation__platenumber_label = "Platenumber";
+payment_confirmation__vignette_type_label = "Vignette type";
+payment_confirmation__trx_fee_label = "Transaction fee";
+payment_confirmation__amount_label = "Payable amount";
+payment_confirmation__confirmation_button_title = "Next";
+payment_confirmation__cancel_button_title = "Cancel";
+
+payment_result__title = "Successful payment";
+payment_result__button_title = "Ok";
+
 vignette_type_day_title = "daily (1 day)";
 vignette_type_week_title = "weekly (10 days)";
 vignette_type_month_title = "monthly";
+
+vignette_type_year_payment_confirmation_title = "Yearly counties";
+vignette_type_other_payment_confirmation_title = "National";
 
 currency = "HUF";

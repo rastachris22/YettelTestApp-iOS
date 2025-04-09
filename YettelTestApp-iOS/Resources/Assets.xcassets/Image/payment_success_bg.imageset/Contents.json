@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "payment_success_bg.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
