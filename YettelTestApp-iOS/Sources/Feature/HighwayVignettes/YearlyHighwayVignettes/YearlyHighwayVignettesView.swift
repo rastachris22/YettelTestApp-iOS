@@ -26,6 +26,8 @@ struct YearlyHighwayVignettesView: View {
     var body: some View {
            VStack(spacing: 0) {
                ScrollView {
+                   Spacer()
+                       .frame(height: 16)
                    VStack(spacing: 16) {
                        Text(YettelTestAppIOSStrings.yearlyHighwayVignettesYearlyVignettesTitle)
                            .font(.system(size: 20).bold())
@@ -73,16 +75,17 @@ struct YearlyHighwayVignettesView: View {
                            Spacer()
                        }
                        .padding(.bottom, 16)
-
-                       Button(YettelTestAppIOSStrings.yearlyHighwayVignettesPayButtonTitle) {
-                           viewModel.didTapNextButton()
-                       }
-                       .buttonStyle(.primary)
                    }
                    .padding()
+                   
+                   Button(YettelTestAppIOSStrings.yearlyHighwayVignettesPayButtonTitle) {
+                       viewModel.didTapNextButton()
+                   }
+                   .buttonStyle(.primary)
                }
            }
            .padding(.horizontal, 16)
+           .navbar(title: YettelTestAppIOSStrings.yearlyHighwayVignettesTitle)
        }
 }
 

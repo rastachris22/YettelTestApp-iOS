@@ -25,6 +25,8 @@ struct PaymentConfirmationView: View {
     
     var body: some View {
         VStack(spacing: 16) {
+            Spacer()
+                .frame(height: 16)
             VStack(alignment: .leading, spacing: 8) {
                 Text(YettelTestAppIOSStrings.paymentConfirmationConfirmationLabel)
                     .font(.system(size: 20).bold())
@@ -132,6 +134,7 @@ struct PaymentConfirmationView: View {
             Spacer()
         }
         .padding(.horizontal, 16)
+        .navbar(title: YettelTestAppIOSStrings.paymentConfirmationTitle)
     }
 }
 

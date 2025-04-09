@@ -15,6 +15,8 @@ struct HighwayVignettesView: View {
     var body: some View {
         VStack {
             ScrollView {
+                Spacer()
+                    .frame(height: 16)
                 VStack {
                     HStack(spacing: 16) {
                         viewModel.currentVehicleCategory?.icon
@@ -103,6 +105,7 @@ struct HighwayVignettesView: View {
             await viewModel.fetchHighwayInfo()
             await viewModel.fetchVehicleInfo()
         }
+        .navbar(title: YettelTestAppIOSStrings.highwayVignettesTitle)
     }
 }
 

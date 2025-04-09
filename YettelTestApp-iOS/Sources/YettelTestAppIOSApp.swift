@@ -14,6 +14,8 @@ struct YettelTestAppIOSApp: App {
                         coordinator.build(route: route)
                     }
             }
+            .tint(YettelTestAppIOSAsset.Assets.Color.Button.primary.swiftUIColor)
+            .accentColor(YettelTestAppIOSAsset.Assets.Color.Button.primary.swiftUIColor)
         }
     }
 }
