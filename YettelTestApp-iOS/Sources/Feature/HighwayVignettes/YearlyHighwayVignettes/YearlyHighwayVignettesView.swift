@@ -12,11 +12,13 @@ struct YearlyHighwayVignettesView: View {
     @StateObject private var viewModel: ViewModel
     
     init(
+        plateNumber: String,
         highwayVignette: HighwayVignette,
         counties: [County]
     ) {
         _viewModel = StateObject(
             wrappedValue: ViewModel(
+                plateNumber: plateNumber,
                 highwayVignette: highwayVignette,
                 counties: counties
             )
@@ -91,6 +93,7 @@ struct YearlyHighwayVignettesView: View {
 
 #Preview {
     YearlyHighwayVignettesView(
+        plateNumber: "ABC-123",
         highwayVignette: HighwayVignette(
             vignetteType: [.year],
             vehicleCategory:

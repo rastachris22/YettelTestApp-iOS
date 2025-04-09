@@ -39,11 +39,14 @@ extension YearlyHighwayVignettesView {
                 costString = numberFormatter.string(from: NSNumber(value: cost)) ?? ""
             }
         }
+        private var plateNumber: String = ""
         
         init(
+            plateNumber: String,
             highwayVignette: HighwayVignette,
             counties: [County]
         ) {
+            self.plateNumber = plateNumber
             self.highwayVignette = highwayVignette
             self.counties = counties
             self.selectedCounties = []
@@ -63,7 +66,7 @@ extension YearlyHighwayVignettesView {
             }
             coordinator.push(route:
                     .paymentConfirmation(
-                        plateNumber: "",
+                        plateNumber: plateNumber,
                         selectedVignettes: selectedVignettes
                     )
             )

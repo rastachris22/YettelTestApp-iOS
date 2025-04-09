@@ -8,6 +8,7 @@
 public enum Route: Hashable {
     case highwayVignettes
     case yearlyHighwayVignettes(
+        plateNumber: String,
         highwayVignette: HighwayVignette,
         counties: [County]
     )

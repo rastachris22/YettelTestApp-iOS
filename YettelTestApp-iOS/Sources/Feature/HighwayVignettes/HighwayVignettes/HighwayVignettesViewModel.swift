@@ -46,6 +46,7 @@ extension HighwayVignettesView {
             guard let yearlyVignette else { return }
             coordinator.push(route:
                     .yearlyHighwayVignettes(
+                        plateNumber: vehicleInfo?.plate ?? "",
                         highwayVignette: yearlyVignette,
                         counties: counties
                     )

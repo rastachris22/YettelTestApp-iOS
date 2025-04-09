@@ -26,8 +26,9 @@ public final class Coordinator: ObservableObject {
     func build(route: Route) -> some View {
         switch route {
         case .highwayVignettes: HighwayVignettesView()
-        case let .yearlyHighwayVignettes(highwayVignette, counties):
+        case let .yearlyHighwayVignettes(plateNumber, highwayVignette, counties):
             YearlyHighwayVignettesView(
+                plateNumber: plateNumber,
                 highwayVignette: highwayVignette,
                 counties: counties
             )
