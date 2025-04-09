@@ -21,7 +21,7 @@ public enum HighwayInfoError: Error {
 
 // MARK: - Highway Vignette
 public struct HighwayVignette: Codable, Equatable, Hashable {
-    let vignetteType: [VignetteType]
+    var vignetteType: [VignetteType]
     let vehicleCategory: VehicleCategory?
     let cost: Int
     let trxFee: Int

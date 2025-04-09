@@ -13,14 +13,12 @@ struct PaymentConfirmationView: View {
     
     init(
         plateNumber: String,
-        vignetteType: VignetteType,
-        highwayVignettes: [HighwayVignette]
+        selectedVignettes: [SelectedVignette]
     ) {
         _viewModel = StateObject(
             wrappedValue: ViewModel(
                 plateNumber: plateNumber,
-                vignetteType: vignetteType,
-                highwayVignettes: highwayVignettes
+                selectedVignettes: selectedVignettes
             )
         )
     }
@@ -58,7 +56,7 @@ struct PaymentConfirmationView: View {
                                 YettelTestAppIOSAsset.Assets.Color.Text.primary.swiftUIColor
                             )
                         Spacer()
-                        Text(viewModel.vignetteType.paymentConfirmationTitle)
+                        Text(viewModel.selectedVignettes.first?.typeTitle ?? "")
                             .font(.system(size: 14))
                             .foregroundColor(
                                 YettelTestAppIOSAsset.Assets.Color.Text.primary.swiftUIColor
@@ -70,7 +68,7 @@ struct PaymentConfirmationView: View {
                 Divider()
                 
                 VStack(spacing: 16) {
-                    ForEach(viewModel.highwayVignettes, id: \.vignetteType) { vignette in
+                    ForEach(viewModel.selectedVignettes, id: \.hashValue) { vignette in
                         HStack {
                             Text(vignette.title)
                                 .font(.system(size: 16).bold())
@@ -122,7 +120,7 @@ struct PaymentConfirmationView: View {
             .padding(.bottom, 16)
             
             Button(YettelTestAppIOSStrings.paymentConfirmationConfirmationButtonTitle) {
-                // TODO: - Call viewModel method
+                viewModel.didTapPayButton()
             }
             .buttonStyle(.primary)
             
@@ -140,23 +138,10 @@ struct PaymentConfirmationView: View {
 #Preview {
     PaymentConfirmationView(
         plateNumber: "ABC-123",
-        vignetteType: .day,
-        highwayVignettes: [
-            HighwayVignette(
-                vignetteType: [.week],
-                vehicleCategory:
-                    VehicleCategory(
-                        category: "CAR",
-                        vignetteCategory: "D1",
-                        name: LocalizedName(
-                            hu: "Személygépjármű",
-                            en: "Car"
-                        )
-                    ),
-                cost: 6600,
-                trxFee: 200,
-                sum: 6800
-            )
+        selectedVignettes: [
+            SelectedVignette(title: "Bács-Kiskun", cost: 6600, trxFee: 200, sum: 6800, type: "YEAR11", category: "D1"),
+            SelectedVignette(title: "Csongrád", cost: 6600, trxFee: 200, sum: 6800, type: "YEAR12", category: "D1"),
+            SelectedVignette(title: "Tolna", cost: 6600, trxFee: 200, sum: 6800, type: "YEAR13", category: "D1")
         ]
     )
 }

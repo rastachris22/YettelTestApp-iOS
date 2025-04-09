@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Factory
 
 extension YearlyHighwayVignettesView {
+    @MainActor
     final class ViewModel: ObservableObject {
         
         @Published var highwayVignette: HighwayVignette?
@@ -21,6 +23,8 @@ extension YearlyHighwayVignettesView {
             }
         }
         @Published var costString: String = ""
+        
+        @Injected(\.coordinator) private var coordinator: Coordinator
         
         private let numberFormatter: NumberFormatter = {
             let numberFormatter = NumberFormatter()
@@ -43,6 +47,26 @@ extension YearlyHighwayVignettesView {
             self.highwayVignette = highwayVignette
             self.counties = counties
             self.selectedCounties = []
+        }
+        
+        func didTapNextButton() {
+            guard let highwayVignette else { return }
+            let selectedVignettes = selectedCounties.map { county in
+                SelectedVignette(
+                    title: county.name,
+                    cost: highwayVignette.cost,
+                    trxFee: highwayVignette.trxFee,
+                    sum: highwayVignette.sum,
+                    type: county.id,
+                    category: highwayVignette.vehicleCategory?.category ?? ""
+                )
+            }
+            coordinator.push(route:
+                    .paymentConfirmation(
+                        plateNumber: "",
+                        selectedVignettes: selectedVignettes
+                    )
+            )
         }
         
         func selectCounty(_ county: County) {

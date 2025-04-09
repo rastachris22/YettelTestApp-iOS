@@ -21,5 +21,15 @@ extension Container {
             HighwayInfoInteractor()
         }
     }
-        
+    public var paymentInteractor: Factory<PaymentInteractorType> {
+        self {
+            PaymentInteractor()
+        }
+    }
+    public var coordinator: Factory<Coordinator> {
+        self {
+            Coordinator()
+        }
+        .singleton
+    }
 }

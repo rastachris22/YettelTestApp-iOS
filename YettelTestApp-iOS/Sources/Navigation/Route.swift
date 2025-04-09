@@ -1,17 +1,19 @@
 //
-//  Routes.swift
+//  Route.swift
 //  YettelTestApp-iOS
 //
 //  Created by Madarász Krisztián on 2025. 04. 09..
 //
 
-enum Routes: Hashable {
+public enum Route: Hashable {
     case highwayVignettes
-    case yearlyHighwayVignettes
+    case yearlyHighwayVignettes(
+        highwayVignette: HighwayVignette,
+        counties: [County]
+    )
     case paymentConfirmation(
         plateNumber: String,
-        vignetteType: VignetteType,
-        highwayVignettes: [HighwayVignette]
+        selectedVignettes: [SelectedVignette]
     )
     case paymentResult
 }

@@ -75,13 +75,14 @@ struct YearlyHighwayVignettesView: View {
                        .padding(.bottom, 16)
 
                        Button(YettelTestAppIOSStrings.yearlyHighwayVignettesPayButtonTitle) {
-                           // TODO: - Call ViewModel method
+                           viewModel.didTapNextButton()
                        }
                        .buttonStyle(.primary)
                    }
                    .padding()
                }
            }
+           .padding(.horizontal, 16)
        }
 }
 

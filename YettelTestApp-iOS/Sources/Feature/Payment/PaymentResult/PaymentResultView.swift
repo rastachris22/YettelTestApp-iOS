@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PaymentResultView: View {
+    
+    @StateObject private var viewModel = ViewModel()
+    
     var body: some View {
             VStack(spacing: 6) {
                 ZStack(alignment: .bottomLeading) {
@@ -36,7 +39,7 @@ struct PaymentResultView: View {
                 }
 
                 Button(YettelTestAppIOSStrings.paymentResultButtonTitle) {
-                    // TODO: Call ViewModel method
+                    viewModel.didTapOkButton()
                 }
                 .buttonStyle(.primary)
                 .padding(.horizontal, 16)
@@ -44,6 +47,7 @@ struct PaymentResultView: View {
                 Spacer()
             }
             .background(YettelTestAppIOSAsset.Assets.Color.Bg.neon.swiftUIColor)
+            .navigationBarHidden(true)
         }
 }
 

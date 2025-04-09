@@ -17,9 +17,40 @@ extension HighwayVignettesView {
         @Published var nationalVignettes: [HighwayVignette] = []
         @Published var selectedNationalVignette: HighwayVignette?
         
-        private var vehicleCategories: [VehicleCategory] = []
-        
         @Injected(\.highwayInfoInteractor) private var highwayInfoInteractor: HighwayInfoInteractorType
+        @Injected(\.coordinator) private var coordinator: Coordinator
+        
+        private var vehicleCategories: [VehicleCategory] = []
+        private var yearlyVignette: HighwayVignette?
+        private var counties: [County] = []
+        
+        func didTapPayButton() {
+            guard let selectedNationalVignette else { return }
+            let selectedVignette = SelectedVignette(
+                title: selectedNationalVignette.title,
+                cost: selectedNationalVignette.cost,
+                trxFee: selectedNationalVignette.trxFee,
+                sum: selectedNationalVignette.sum,
+                type: selectedNationalVignette.vignetteType.first?.rawValue ?? "",
+                category: selectedNationalVignette.vehicleCategory?.category ?? ""
+            )
+            coordinator.push(route:
+                    .paymentConfirmation(
+                        plateNumber: vehicleInfo?.plate ?? "",
+                        selectedVignettes: [selectedVignette]
+                    )
+            )
+        }
+        
+        func didTapYearlyVignettesButton() {
+            guard let yearlyVignette else { return }
+            coordinator.push(route:
+                    .yearlyHighwayVignettes(
+                        highwayVignette: yearlyVignette,
+                        counties: counties
+                    )
+            )
+        }
         
         func fetchHighwayInfo() async {
             let result = await highwayInfoInteractor.fetchHighwayInfo()
@@ -28,7 +59,11 @@ extension HighwayVignettesView {
                 nationalVignettes = value.highwayVignettes.filter({ vignette in
                     vignette.vignetteType.contains(.day) || vignette.vignetteType.contains(.month) || vignette.vignetteType.contains(.week)
                 })
+                yearlyVignette = value.highwayVignettes.first(where: { vignette in
+                    vignette.vignetteType.contains(.year)
+                })
                 vehicleCategories = value.vehicleCategories
+                counties = value.counties
             case .failure(let error):
                 print(error)
             }

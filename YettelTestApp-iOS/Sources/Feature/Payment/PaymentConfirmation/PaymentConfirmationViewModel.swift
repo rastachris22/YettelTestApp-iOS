@@ -6,15 +6,19 @@
 //
 
 import SwiftUI
+import Factory
 
 extension PaymentConfirmationView {
+    @MainActor
     final class ViewModel: ObservableObject {
         @Published var plateNumber = ""
-        @Published var vignetteType: VignetteType = .month
-        @Published var highwayVignettes: [HighwayVignette] = []
+        @Published var selectedVignettes: [SelectedVignette] = []
         @Published var trxFeeString: String = ""
         @Published var sumString: String = ""
         
+        @Injected(\.paymentInteractor) private var paymentInteractor: PaymentInteractorType
+        @Injected(\.coordinator) private var coordinator: Coordinator
+                
         private let numberFormatter: NumberFormatter = {
             let numberFormatter = NumberFormatter()
             numberFormatter.numberStyle = .currency
@@ -36,16 +40,35 @@ extension PaymentConfirmationView {
         
         init(
             plateNumber: String = "",
-            vignetteType: VignetteType,
-            highwayVignettes: [HighwayVignette]
+            selectedVignettes: [SelectedVignette]
         ) {
             self.plateNumber = plateNumber
-            self.vignetteType = vignetteType
-            self.highwayVignettes = highwayVignettes
+            self.selectedVignettes = selectedVignettes
             
-            self.highwayVignettes.forEach { vignette in
+            self.selectedVignettes.forEach { vignette in
                 trxFee += vignette.trxFee
                 sum += vignette.sum
+            }
+        }
+        
+        func didTapPayButton() {
+            Task {
+                await sendOrder()
+            }
+        }
+        
+        private func sendOrder() async {
+            let orderPayloadItems = selectedVignettes.map { selectedVignette in
+                OrderPayloadItem(
+                    type: selectedVignette.type,
+                    category: selectedVignette.category,
+                    cost: selectedVignette.cost
+                )
+            }
+                    
+            let result = await paymentInteractor.postPayment(orderPayloadItems: orderPayloadItems)
+            if case .success = result {
+                coordinator.push(route: .paymentResult)
             }
         }
     }

@@ -10,6 +10,7 @@ import SwiftUI
 struct HighwayVignettesView: View {
     
     @StateObject private var viewModel: ViewModel = .init()
+    @EnvironmentObject private var coordinator: Coordinator
     
     var body: some View {
         VStack {
@@ -61,6 +62,7 @@ struct HighwayVignettesView: View {
                     
                     Button(YettelTestAppIOSStrings.highwayVignettesPayButtonTitle) {
                         // TODO: - Call viewModel pay method
+                        viewModel.didTapPayButton()
                     }
                     .buttonStyle(.primary)
                     .frame(maxWidth: .infinity)
@@ -89,6 +91,9 @@ struct HighwayVignettesView: View {
                 .background(Color(.white))
                 .cornerRadius(16)
                 .padding(.horizontal)
+                .onTapGesture {
+                    viewModel.didTapYearlyVignettesButton()
+                }
                 
                 Spacer()
             }
