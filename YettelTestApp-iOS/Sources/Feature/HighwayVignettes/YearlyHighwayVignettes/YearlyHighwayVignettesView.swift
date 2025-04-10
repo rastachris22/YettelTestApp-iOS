@@ -30,11 +30,26 @@ struct YearlyHighwayVignettesView: View {
                ScrollView {
                    Spacer()
                        .frame(height: 16)
+                   Text(YettelTestAppIOSStrings.yearlyHighwayVignettesYearlyVignettesTitle)
+                       .font(.system(size: 20).bold())
+                       .frame(maxWidth: .infinity, alignment: .leading)
+                       .padding()
+                   ZStack {
+                       ForEach(viewModel.counties, id: \.hashValue) { county in
+                           if let countyShape = county.countyShape {
+                               countyShape
+                                   .fillAndStroke(
+                                    viewModel.selectedCounties.contains(county)
+                                    ? YettelTestAppIOSAsset.Assets.Color.Bg.neon.swiftUIColor
+                                    : YettelTestAppIOSAsset.Assets.Color.Bg.lightBlue.swiftUIColor
+                                   )
+                           }
+                       }
+                   }
+                   .padding(.horizontal, 30)
+                   .padding(.bottom, 170)
+                   
                    VStack(spacing: 16) {
-                       Text(YettelTestAppIOSStrings.yearlyHighwayVignettesYearlyVignettesTitle)
-                           .font(.system(size: 20).bold())
-                           .frame(maxWidth: .infinity, alignment: .leading)
-
                        ForEach(viewModel.counties, id: \.hashValue) { county in
                            HStack {
                                Button(action: {

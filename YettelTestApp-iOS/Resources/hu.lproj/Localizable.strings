@@ -2,11 +2,13 @@ highway_vignettes__title = "E-matrica";
 highway_vignettes__national_vignettes_title = "Országos matricák";
 highway_vignettes__pay_button_title = "Vásárlás";
 highway_vignettes__yearly_vignettes_title = "Éves vármegyei matricák";
+highway_vignettes__not_selected_vignette_error_message = "Nem választottál ki egy terméket sem!";
 
 yearly_highway_vignettes__title = "E-matrica";
 yearly_highway_vignettes__yearly_vignettes_title = "Éves vármegyei matricák";
 yearly_highway_vignettes__amount_label = "Fizetendő összeg";
 yearly_highway_vignettes__pay_button_title = "Tovább";
+yearly_highway_vignettes__selected_vignette_warning_message = "A kiválasztott vármegyék nem szomszédosak";
 
 payment_confirmation__title = "E-matrica";
 payment_confirmation__confirmation_label = "Vásárlás megerősítése";
@@ -26,5 +28,8 @@ vignette_type_month_title = "havi";
 
 vignette_type_year_payment_confirmation_title = "Éves vármegyei";
 vignette_type_other_payment_confirmation_title = "Országos";
+
+general_error_title = "Hiba!";
+general_error_message = "Váratlan hiba történt!";
 
 currency = "Ft";

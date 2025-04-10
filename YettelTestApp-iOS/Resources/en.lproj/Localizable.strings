@@ -2,11 +2,13 @@ highway_vignettes__title = "E-vignette";
 highway_vignettes__national_vignettes_title = "National vignettes";
 highway_vignettes__pay_button_title = "Pay";
 highway_vignettes__yearly_vignettes_title = "Yearly counties vignettes";
+highway_vignettes__not_selected_vignette_error_message = "You haven't selected any product!";
 
 yearly_highway_vignettes__title = "E-vignette";
 yearly_highway_vignettes__yearly_vignettes_title = "Yearly counties vignettes";
 yearly_highway_vignettes__amount_label = "Payable amount";
 yearly_highway_vignettes__pay_button_title = "Next";
+yearly_highway_vignettes__selected_vignette_warning_message = "The selected counties are not adjacent.";
 
 payment_confirmation__title = "E-vignette";
 payment_confirmation__confirmation_label = "Payment confirmation";
@@ -26,5 +28,8 @@ vignette_type_month_title = "monthly";
 
 vignette_type_year_payment_confirmation_title = "Yearly counties";
 vignette_type_other_payment_confirmation_title = "National";
+
+general_error_title = "Error!";
+general_error_message = "Something went wrong!";
 
 currency = "HUF";

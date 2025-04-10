@@ -18,6 +18,7 @@ extension PaymentConfirmationView {
         
         @Injected(\.paymentInteractor) private var paymentInteractor: PaymentInteractorType
         @Injected(\.coordinator) private var coordinator: Coordinator
+        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManager
                 
         private let numberFormatter: NumberFormatter = {
             let numberFormatter = NumberFormatter()
@@ -57,6 +58,10 @@ extension PaymentConfirmationView {
             }
         }
         
+        func didTapCancelButton() {
+            coordinator.pop()
+        }
+        
         private func sendOrder() async {
             let orderPayloadItems = selectedVignettes.map { selectedVignette in
                 OrderPayloadItem(
@@ -67,8 +72,11 @@ extension PaymentConfirmationView {
             }
                     
             let result = await paymentInteractor.postPayment(orderPayloadItems: orderPayloadItems)
-            if case .success = result {
+            switch result {
+            case .success:
                 coordinator.push(route: .paymentResult)
+            case let .failure(error):
+                globalErrorManager.show(error: error)
             }
         }
     }

@@ -19,13 +19,17 @@ extension HighwayVignettesView {
         
         @Injected(\.highwayInfoInteractor) private var highwayInfoInteractor: HighwayInfoInteractorType
         @Injected(\.coordinator) private var coordinator: Coordinator
+        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManager
         
         private var vehicleCategories: [VehicleCategory] = []
         private var yearlyVignette: HighwayVignette?
         private var counties: [County] = []
         
         func didTapPayButton() {
-            guard let selectedNationalVignette else { return }
+            guard let selectedNationalVignette else {
+                globalErrorManager.show(message: YettelTestAppIOSStrings.highwayVignettesNotSelectedVignetteErrorMessage)
+                return
+            }
             let selectedVignette = SelectedVignette(
                 title: selectedNationalVignette.title,
                 cost: selectedNationalVignette.cost,
@@ -66,7 +70,7 @@ extension HighwayVignettesView {
                 vehicleCategories = value.vehicleCategories
                 counties = value.counties
             case .failure(let error):
-                print(error)
+                globalErrorManager.show(error: error)
             }
         }
         
@@ -79,7 +83,7 @@ extension HighwayVignettesView {
                     vehicleCategory.category == value.type
                 })
             case .failure(let error):
-                print(error)
+                globalErrorManager.show(error: error)
             }
         }
     }

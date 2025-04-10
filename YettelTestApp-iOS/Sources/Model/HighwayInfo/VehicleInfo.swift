@@ -5,6 +5,8 @@
 //  Created by Madarász Krisztián on 2025. 04. 08..
 //
 
+import Foundation
+
 public struct VehicleInfo: Codable {
     let internationalRegistrationCode: String
     let type: String
@@ -12,13 +14,4 @@ public struct VehicleInfo: Codable {
     let plate: String
     let country: LocalizedCountry
     let vignetteType: String
-}
-
-public enum VehicleInfoError: Error {
-    case general
-}
-
-public struct LocalizedCountry: Codable {
-    let hu: String
-    let en: String
 }

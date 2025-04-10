@@ -25,6 +25,7 @@ extension YearlyHighwayVignettesView {
         @Published var costString: String = ""
         
         @Injected(\.coordinator) private var coordinator: Coordinator
+        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManager
         
         private let numberFormatter: NumberFormatter = {
             let numberFormatter = NumberFormatter()
@@ -53,7 +54,10 @@ extension YearlyHighwayVignettesView {
         }
         
         func didTapNextButton() {
-            guard let highwayVignette else { return }
+            guard let highwayVignette, !selectedCounties.isEmpty else {
+                globalErrorManager.show(message: YettelTestAppIOSStrings.highwayVignettesNotSelectedVignetteErrorMessage)
+                return
+            }
             let selectedVignettes = selectedCounties.map { county in
                 SelectedVignette(
                     title: county.name,
@@ -76,6 +80,15 @@ extension YearlyHighwayVignettesView {
             if selectedCounties.contains(county) {
                 selectedCounties.remove(county)
             } else {
+                let adjacentCounties = Set(
+                    selectedCounties
+                        .compactMap { county in
+                            county.adjacentCounties
+                        }.flatMap { $0 }
+                )
+                if !selectedCounties.isEmpty, !adjacentCounties.contains(county.id) {
+                    globalErrorManager.show(message: YettelTestAppIOSStrings.yearlyHighwayVignettesSelectedVignetteWarningMessage)
+                }
                 selectedCounties.insert(county)
             }
         }

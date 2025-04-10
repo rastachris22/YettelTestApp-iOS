@@ -32,4 +32,10 @@ extension Container {
         }
         .singleton
     }
+    public var globalErrorManager: Factory<GlobalErrorManager> {
+        self {
+            GlobalErrorManager()
+        }
+        .singleton
+    }
 }
