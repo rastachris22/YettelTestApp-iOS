@@ -17,8 +17,8 @@ extension PaymentConfirmationView {
         @Published var sumString: String = ""
         
         @Injected(\.paymentInteractor) private var paymentInteractor: PaymentInteractorType
-        @Injected(\.coordinator) private var coordinator: Coordinator
-        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManager
+        @Injected(\.coordinator) private var coordinator: CoordinatorType
+        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManagerType
                 
         private let numberFormatter: NumberFormatter = {
             let numberFormatter = NumberFormatter()

@@ -9,7 +9,6 @@ import SwiftUI
 import Factory
 
 extension HighwayVignettesView {
-    @MainActor
     final class ViewModel: ObservableObject {
         @Published var vehicleInfo: VehicleInfo?
         @Published var currentVehicleCategory: VehicleCategory?
@@ -18,8 +17,8 @@ extension HighwayVignettesView {
         @Published var selectedNationalVignette: HighwayVignette?
         
         @Injected(\.highwayInfoInteractor) private var highwayInfoInteractor: HighwayInfoInteractorType
-        @Injected(\.coordinator) private var coordinator: Coordinator
-        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManager
+        @Injected(\.coordinator) private var coordinator: CoordinatorType
+        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManagerType
         
         private var vehicleCategories: [VehicleCategory] = []
         private var yearlyVignette: HighwayVignette?
@@ -57,6 +56,7 @@ extension HighwayVignettesView {
             )
         }
         
+        @MainActor
         func fetchHighwayInfo() async {
             let result = await highwayInfoInteractor.fetchHighwayInfo()
             switch result {
@@ -74,6 +74,7 @@ extension HighwayVignettesView {
             }
         }
         
+        @MainActor
         func fetchVehicleInfo() async {
             let result = await highwayInfoInteractor.fetchVehicleInfo()
             switch result {

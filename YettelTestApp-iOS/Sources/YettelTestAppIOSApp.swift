@@ -4,15 +4,17 @@ import Factory
 @main
 struct YettelTestAppIOSApp: App {
     
-    @InjectedObject(\.coordinator) private var coordinator: Coordinator
-    @InjectedObject(\.globalErrorManager) private var globalErrorManager: GlobalErrorManager
+    @Injected(\.coordinator) private var coordinator: CoordinatorType
+    @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManagerType
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack(path: $coordinator.path) {
-                coordinator.build(route: .highwayVignettes)
+            NavigationStack(path: Binding(get: {
+                coordinator.path
+            }, set: { _ in })) {
+                coordinator.initialRoute.build()
                     .navigationDestination(for: Route.self) { route in
-                        coordinator.build(route: route)
+                        route.build()
                     }
                     .alert(item: Binding(
                         get: { globalErrorManager.errorMessage.map { ErrorWrapper(message: $0) } },

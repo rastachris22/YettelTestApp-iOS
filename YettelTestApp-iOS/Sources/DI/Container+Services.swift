@@ -26,13 +26,13 @@ extension Container {
             PaymentInteractor()
         }
     }
-    public var coordinator: Factory<Coordinator> {
+    public var coordinator: Factory<CoordinatorType> {
         self {
             Coordinator()
         }
         .singleton
     }
-    public var globalErrorManager: Factory<GlobalErrorManager> {
+    public var globalErrorManager: Factory<GlobalErrorManagerType> {
         self {
             GlobalErrorManager()
         }

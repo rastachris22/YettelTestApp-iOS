@@ -24,8 +24,8 @@ extension YearlyHighwayVignettesView {
         }
         @Published var costString: String = ""
         
-        @Injected(\.coordinator) private var coordinator: Coordinator
-        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManager
+        @Injected(\.coordinator) private var coordinator: CoordinatorType
+        @Injected(\.globalErrorManager) private var globalErrorManager: GlobalErrorManagerType
         
         private let numberFormatter: NumberFormatter = {
             let numberFormatter = NumberFormatter()

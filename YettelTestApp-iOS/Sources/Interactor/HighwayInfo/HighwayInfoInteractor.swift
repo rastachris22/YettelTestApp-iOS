@@ -8,7 +8,9 @@
 import Foundation
 import OpenAPIRuntime
 import Factory
+import Mockable
 
+@Mockable
 public protocol HighwayInfoInteractorType: Actor {
     func fetchHighwayInfo() async -> Result<HighwayInfo, HighwayInfoError>
     func fetchVehicleInfo() async -> Result<VehicleInfo, VehicleInfoError>

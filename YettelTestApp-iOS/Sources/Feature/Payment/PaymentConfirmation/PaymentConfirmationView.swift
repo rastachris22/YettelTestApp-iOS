@@ -127,6 +127,7 @@ struct PaymentConfirmationView: View {
                         viewModel.didTapPayButton()
                     }
                     .buttonStyle(.primary)
+                    .padding(.bottom, 8)
                     
                     Button(YettelTestAppIOSStrings.paymentConfirmationCancelButtonTitle) {
                         viewModel.didTapCancelButton()

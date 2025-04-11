@@ -6,9 +6,21 @@
 //
 
 import SwiftUI
+import Mockable
 
-public final class Coordinator: ObservableObject {
-    @Published var path: NavigationPath = NavigationPath()
+@Mockable
+public protocol CoordinatorType: Observable {
+    var path: NavigationPath { get }
+    var initialRoute: Route { get }
+    func push(route: Route)
+    func pop()
+    func popToRoot()
+}
+
+@Observable
+final class Coordinator: CoordinatorType {
+    var path: NavigationPath = NavigationPath()
+    var initialRoute: Route = .highwayVignettes
     
     func push(route: Route) {
         path.append(route)
@@ -20,24 +32,5 @@ public final class Coordinator: ObservableObject {
     
     func popToRoot() {
         path.removeLast(path.count)
-    }
-    
-    @ViewBuilder
-    func build(route: Route) -> some View {
-        switch route {
-        case .highwayVignettes: HighwayVignettesView()
-        case let .yearlyHighwayVignettes(plateNumber, highwayVignette, counties):
-            YearlyHighwayVignettesView(
-                plateNumber: plateNumber,
-                highwayVignette: highwayVignette,
-                counties: counties
-            )
-        case let .paymentConfirmation(plateNumber, selectedVignettes):
-            PaymentConfirmationView(
-                plateNumber: plateNumber,
-                selectedVignettes: selectedVignettes
-            )
-        case .paymentResult: PaymentResultView()
-        }
     }
 }

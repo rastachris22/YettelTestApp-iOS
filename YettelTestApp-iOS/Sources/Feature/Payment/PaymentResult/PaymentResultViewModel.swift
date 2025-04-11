@@ -11,7 +11,7 @@ import SwiftUI
 extension PaymentResultView {
     final class ViewModel: ObservableObject {
         
-        @Injected(\.coordinator) private var coordinator: Coordinator
+        @Injected(\.coordinator) private var coordinator: CoordinatorType
         
         func didTapOkButton() {
             coordinator.popToRoot()

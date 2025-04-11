@@ -6,7 +6,8 @@ let project = Project(
         .remote(url: "https://github.com/apple/swift-openapi-generator", requirement: .upToNextMajor(from: "1.3.0")),
         .remote(url: "https://github.com/apple/swift-openapi-runtime", requirement: .exact("1.5.0")),
         .remote(url: "https://github.com/apple/swift-openapi-urlsession", requirement: .exact("1.0.2")),
-        .remote(url: "https://github.com/hmlongco/Factory", requirement: .upToNextMajor(from: "2.4.5"))
+        .remote(url: "https://github.com/hmlongco/Factory", requirement: .upToNextMajor(from: "2.4.5")),
+        .remote(url: "https://github.com/Kolos65/Mockable", requirement: .upToNextMajor(from: "0.0.1"))
     ],
     targets: [
         .target(
@@ -32,8 +33,19 @@ let project = Project(
                 .package(product: "HTTPTypes"),
                 .package(product: "OpenAPIRuntime"),
                 .package(product: "OpenAPIURLSession"),
-                .package(product: "OpenAPIGenerator", type: .plugin)
-            ]
+                .package(product: "OpenAPIGenerator", type: .plugin),
+                .package(product: "Mockable")
+            ],
+            settings: .settings(
+                configurations: [
+                    .debug(
+                        name: .debug,
+                        settings: [
+                            "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "$(inherited) MOCKING"
+                        ]
+                    )
+                ]
+            )
         ),
         .target(
             name: "YettelTestApp-iOSTests",
@@ -43,7 +55,11 @@ let project = Project(
             infoPlist: .default,
             sources: ["YettelTestApp-iOS/Tests/**"],
             resources: [],
-            dependencies: [.target(name: "YettelTestApp-iOS")]
+            dependencies: [
+                .target(name: "YettelTestApp-iOS"),
+                .package(product: "Factory"),
+                .package(product: "Mockable")
+            ]
         ),
     ]
 )

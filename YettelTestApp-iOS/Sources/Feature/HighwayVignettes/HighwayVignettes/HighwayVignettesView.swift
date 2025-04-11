@@ -10,7 +10,6 @@ import SwiftUI
 struct HighwayVignettesView: View {
     
     @StateObject private var viewModel: ViewModel = .init()
-    @EnvironmentObject private var coordinator: Coordinator
     
     var body: some View {
         VStack {

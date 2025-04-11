@@ -8,7 +8,9 @@
 import Foundation
 import OpenAPIRuntime
 import Factory
+import Mockable
 
+@Mockable
 public protocol PaymentInteractorType: Actor {
     func postPayment(orderPayloadItems: [OrderPayloadItem]) async -> Result<Void, OrderError>
 }
