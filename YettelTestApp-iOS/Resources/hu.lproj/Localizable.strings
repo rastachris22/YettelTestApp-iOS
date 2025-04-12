@@ -25,6 +25,7 @@ payment_result__button_title = "Rendben";
 vignette_type_day_title = "napi (1 napos)";
 vignette_type_week_title = "heti (10 napos)";
 vignette_type_month_title = "havi";
+vignette_type_year_title = "éves";
 
 vignette_type_year_payment_confirmation_title = "Éves vármegyei";
 vignette_type_other_payment_confirmation_title = "Országos";

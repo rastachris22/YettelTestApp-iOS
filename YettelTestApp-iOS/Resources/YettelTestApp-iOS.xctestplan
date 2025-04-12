@@ -1,0 +1,34 @@
+{
+  "configurations" : [
+    {
+      "id" : "3B0B1FFC-CBB6-4B89-9933-AC0A52CD6035",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:YettelTestApp-iOS.xcodeproj",
+      "identifier" : "B6CBC5315CFC9EB2CC1C32FA",
+      "name" : "YettelTestApp-iOS"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "skippedTests" : [
+        "YettelTestAppIOSTests",
+        "YettelTestAppIOSTests\/test_twoPlusTwo_isFour()"
+      ],
+      "target" : {
+        "containerPath" : "container:YettelTestApp-iOS.xcodeproj",
+        "identifier" : "C48D276867944EFD9EB23310",
+        "name" : "YettelTestApp-iOSTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -25,6 +25,7 @@ payment_result__button_title = "Ok";
 vignette_type_day_title = "daily (1 day)";
 vignette_type_week_title = "weekly (10 days)";
 vignette_type_month_title = "monthly";
+vignette_type_year_title = "yearly";
 
 vignette_type_year_payment_confirmation_title = "Yearly counties";
 vignette_type_other_payment_confirmation_title = "National";

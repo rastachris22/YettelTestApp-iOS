@@ -61,5 +61,16 @@ let project = Project(
                 .package(product: "Mockable")
             ]
         ),
+    ], schemes: [
+        .scheme(
+            name: "YettelTestApp-iOS",
+            shared: true,
+            buildAction: .buildAction(targets: ["YettelTestApp-iOS"]),
+            testAction: .testPlans(["YettelTestApp-iOS/Resources/YettelTestApp-IOS.xctestplan"]),
+            runAction: .runAction(configuration: .debug),
+            archiveAction: .archiveAction(configuration: .release),
+            profileAction: .profileAction(configuration: .release),
+            analyzeAction: .analyzeAction(configuration: .debug)
+        )
     ]
 )

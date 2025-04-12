@@ -65,7 +65,7 @@ extension HighwayVignettesView {
                     vignette.vignetteType.contains(.day) || vignette.vignetteType.contains(.month) || vignette.vignetteType.contains(.week)
                 })
                 yearlyVignette = value.highwayVignettes.first(where: { vignette in
-                    vignette.vignetteType.contains(.year)
+                    vignette.vignetteType.contains(.year11)
                 })
                 vehicleCategories = value.vehicleCategories
                 counties = value.counties

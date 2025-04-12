@@ -38,6 +38,8 @@ public enum VignetteType: String, Codable, Hashable {
             return YettelTestAppIOSStrings.vignetteTypeWeekTitle
         case .month:
             return YettelTestAppIOSStrings.vignetteTypeMonthTitle
+        case .year:
+            return YettelTestAppIOSStrings.vignetteTypeYearTitle
         default: return nil
         }
     }
